@@ -15,7 +15,7 @@ const attachment =
 // 节点icon
 export const nodeIconList = [
   {
-    name: '优先级图标',
+    name: '優先級圖標',
     type: 'priority',
     list: [
       {
@@ -61,7 +61,7 @@ export const nodeIconList = [
     ]
   },
   {
-    name: '进度图标',
+    name: '進度圖標',
     type: 'progress',
     list: [
       {
@@ -99,7 +99,7 @@ export const nodeIconList = [
     ]
   },
   {
-    name: '表情图标',
+    name: '表情圖標',
     type: 'expression',
     list: [
       {
@@ -185,7 +185,7 @@ export const nodeIconList = [
     ]
   },
   {
-    name: '标记图标',
+    name: '標記圖標',
     type: 'sign',
     list: [
       {

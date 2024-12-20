@@ -116,14 +116,14 @@
                     size="mini"
                     v-if="data.enableEdit"
                     @click="editLocalFile(data)"
-                    >编辑</el-button
+                    >編輯</el-button
                   >
                   <el-button
                     type="text"
                     size="mini"
                     v-else
                     @click="importLocalFile(data)"
-                    >导入</el-button
+                    >導入</el-button
                   >
                 </div>
               </span>

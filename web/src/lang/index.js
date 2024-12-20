@@ -3,7 +3,7 @@ import zh from './zh_cn'
 import zhtw from './zh_tw'
 
 export default {
-  zh,
   zhtw,
+  zh,
   en
 }

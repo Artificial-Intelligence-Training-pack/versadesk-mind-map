@@ -31,7 +31,7 @@ const countCodeLines = content => {
 
 // 转换注释类型
 const transformComments = (file, content) => {
-  console.log('当前转换文件：', file)
+  console.log('當前轉換文件：', file)
   content = content.replace(/\/\*\*[^/]+\*\//g, str => {
     let res = /@Desc:([^\n]+)\n/g.exec(str)
     if (res.length > 0) {

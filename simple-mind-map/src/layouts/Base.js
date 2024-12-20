@@ -23,21 +23,21 @@ class Base {
 
   //  计算节点位置
   doLayout() {
-    throw new Error('【computed】方法为必要方法，需要子类进行重写！')
+    throw new Error('【computed】方法為必要方法，需要子類進行重寫！')
   }
 
   //  连线
   renderLine() {
-    throw new Error('【renderLine】方法为必要方法，需要子类进行重写！')
+    throw new Error('【renderLine】方法為必要方法，需要子類進行重寫！')
   }
 
   //  定位展开收缩按钮
   renderExpandBtn() {
-    throw new Error('【renderExpandBtn】方法为必要方法，需要子类进行重写！')
+    throw new Error('【renderExpandBtn】方法為必要方法，需要子類進行重寫！')
   }
 
   //  概要节点
-  renderGeneralization() {}
+  renderGeneralization() { }
 
   // 通过uid缓存节点
   cacheNode(uid, node) {

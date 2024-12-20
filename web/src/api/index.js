@@ -137,14 +137,14 @@ export const storeLang = lang => {
  */
 export const getLang = () => {
   if (window.takeOverApp) {
-    return window.takeOverAppMethods.getLanguage() || 'zh'
+    return window.takeOverAppMethods.getLanguage() || 'zhtw'
   }
   let lang = localStorage.getItem(SIMPLE_MIND_MAP_LANG)
   if (lang) {
     return lang
   }
-  storeLang('zh')
-  return 'zh'
+  storeLang('zhtw')
+  return 'zhtw'
 }
 
 /**

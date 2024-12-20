@@ -63,9 +63,9 @@ export const defaultOpt = {
   // 当mousewheelAction设为zoom时，或者按住Ctrl键时，默认向前滚动是缩小，向后滚动是放大，如果该属性设为true，那么会反过来
   mousewheelZoomActionReverse: true,
   // 默认插入的二级节点的文字
-  defaultInsertSecondLevelNodeText: '二级节点',
+  defaultInsertSecondLevelNodeText: '二級節點',
   // 默认插入的二级以下节点的文字
-  defaultInsertBelowSecondLevelNodeText: '分支主题',
+  defaultInsertBelowSecondLevelNodeText: '分支主題',
   // 展开收起按钮的颜色
   expandBtnStyle: {
     color: '#808080',
@@ -134,7 +134,7 @@ export const defaultOpt = {
   // 开启该特性后，需要给你的输入框绑定keydown事件，并禁止冒泡
   enableAutoEnterTextEditWhenKeydown: false,
   // 当enableAutoEnterTextEditWhenKeydown选项开启时生效，当通过按键进入文本编辑时是否自动清空原有文本
-  autoEmptyTextWhenKeydownEnterEdit: false, 
+  autoEmptyTextWhenKeydownEnterEdit: false,
   // 自定义对剪贴板文本的处理。当按ctrl+v粘贴时会读取用户剪贴板中的文本和图片，默认只会判断文本是否是普通文本和simple-mind-map格式的节点数据，如果你想处理其他思维导图的数据，比如processon、zhixi等，那么可以传递一个函数，接受当前剪贴板中的文本为参数，返回处理后的数据，可以返回两种类型：
   /*
     1.返回一个纯文本，那么会直接以该文本创建一个子节点
@@ -183,7 +183,7 @@ export const defaultOpt = {
   // 协同编辑时，同一个节点不能同时被多人选中
   onlyOneEnableActiveNodeOnCooperate: false,
   // 插入概要的默认文本
-  defaultGeneralizationText: '概要',
+  defaultGeneralizationText: '概述',
   // 粘贴文本的方式创建新节点时，控制是否按换行自动分割节点，即如果存在换行，那么会根据换行创建多个节点，否则只会创建一个节点
   // 可以传递一个函数，返回promise，resolve代表根据换行分割，reject代表忽略换行
   handleIsSplitByWrapOnPasteCreateNewNode: null,
@@ -249,7 +249,7 @@ export const defaultOpt = {
     removeNodeWhenOutCanvas: true // 节点移除画布可视区域后从画布删除
   },
   // 如果节点文本为空，那么为了避免空白节点高度塌陷，会用该字段指定的文本测量一个高度
-  emptyTextMeasureHeightText: 'abc123我和你',
+  emptyTextMeasureHeightText: 'versadesk雲桌面運算平台',
   // 是否在进行节点文本编辑时实时更新节点大小和节点位置，开启后当节点数量比较多时可能会造成卡顿
   openRealtimeRenderOnNodeTextEdit: false,
   // 默认会给容器元素el绑定mousedown事件，可通过该选项设置是否阻止其默认事件
@@ -356,7 +356,7 @@ export const defaultOpt = {
 
   // 【AssociativeLine插件】
   // 关联线默认文字
-  defaultAssociativeLineText: '关联',
+  defaultAssociativeLineText: '關聯',
   // 关联线是否始终显示在节点上层
   // false：即创建关联线和激活关联线时处于最顶层，其他情况下处于节点下方
   associativeLineIsAlwaysAboveNode: true,

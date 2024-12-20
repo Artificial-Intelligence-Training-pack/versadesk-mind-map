@@ -1,26 +1,30 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-Vue.use(VueRouter)
+// 同步導入所有頁面
+import Edit from './pages/Edit/Index.vue';
+import Doc from './pages/Doc.vue';
+
+Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
     name: 'Edit',
-    component: () => import(`./pages/Edit/Index.vue`)
+    component: Edit, // 同步導入的組件
   },
   {
     path: '/index',
-    redirect: '/'
+    redirect: '/',
   },
   {
     path: '/doc/zh',
-    component: () => import(`./pages/Doc.vue`)
-  }
-]
+    component: Doc, // 同步導入的組件
+  },
+];
 
 const router = new VueRouter({
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

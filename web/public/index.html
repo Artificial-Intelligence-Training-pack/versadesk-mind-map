@@ -7,12 +7,12 @@
       name="viewport"
       content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"
     />
-    <link rel="icon" href="dist/logo.ico" />
-    <title>思绪思维导图</title>
+    <link rel="icon" href="./dist/logo.ico" />
+    <title>心智圖</title>
     <script>
-      // 自定义静态资源的路径
+      // 自定義靜態資源的路徑
       window.externalPublicPath = './dist/'
-      // 接管应用
+      // 接管應用
       window.takeOverApp = false
     </script>
     <script
@@ -50,7 +50,7 @@
               mindMapData: {
                 root: {
                   data: {
-                    text: '根节点'
+                    text: '根節點'
                   },
                   children: []
                 },
@@ -62,7 +62,7 @@
                 config: {},
                 view: null
               },
-              lang: 'zh',
+              lang: 'zhtw',
               localConfig: null
             })
           }, 200)
@@ -70,43 +70,43 @@
       }
       const setTakeOverAppMethods = data => {
         window.takeOverAppMethods = {}
-        // 获取思维导图数据的函数
+        // 取得思維導圖數據的函數
         window.takeOverAppMethods.getMindMapData = () => {
           return data.mindMapData
         }
-        // 保存思维导图数据的函数
+        // 保存思維導圖數據的函數
         window.takeOverAppMethods.saveMindMapData = data => {
           console.log(data)
         }
-        // 获取语言的函数
+        // 取得語言的函數
         window.takeOverAppMethods.getLanguage = () => {
           return data.lang
         }
-        // 保存语言的函数
+        // 保存語言的函數
         window.takeOverAppMethods.saveLanguage = lang => {
           console.log(lang)
         }
-        // 获取本地配置的函数
+        // 取得本地配置的函數
         window.takeOverAppMethods.getLocalConfig = () => {
           return data.localConfig
         }
-        // 保存本地配置的函数
+        // 保存本地配置的函數
         window.takeOverAppMethods.saveLocalConfig = config => {
           console.log(config)
         }
       }
       window.onload = async () => {
         if (!window.takeOverApp) return
-        // 请求数据
+        // 請求數據
         const data = await getDataFromBackend()
-        // 设置全局的方法
+        // 設置全局的方法
         setTakeOverAppMethods(data)
-        // 思维导图实例创建完成事件
+        // 思維導圖實例創建完成事件
         window.$bus.$on('app_inited', mindMap => {
           console.log(mindMap)
         })
-        // 可以通过window.$bus.$on()来监听应用的一些事件
-        // 实例化页面
+        // 可以通過window.$bus.$on()來監聽應用的一些事件
+        // 實例化頁面
         window.initApp()
       }
     </script>

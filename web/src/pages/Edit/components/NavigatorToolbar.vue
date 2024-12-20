@@ -97,11 +97,11 @@
         <div class="btn iconfont iconbangzhu"></div>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item command="github">Github</el-dropdown-item>
-          <el-dropdown-item command="helpDoc">使用文档</el-dropdown-item>
-          <el-dropdown-item command="devDoc">开发文档</el-dropdown-item>
-          <el-dropdown-item command="site">官方网站</el-dropdown-item>
-          <el-dropdown-item command="issue">意见反馈</el-dropdown-item>
-          <el-dropdown-item disabled>当前：v{{ version }}</el-dropdown-item>
+          <el-dropdown-item command="helpDoc">使用文檔</el-dropdown-item>
+          <el-dropdown-item command="devDoc">開發文檔</el-dropdown-item>
+          <el-dropdown-item command="site">官方網站</el-dropdown-item>
+          <el-dropdown-item command="issue">意見反饋</el-dropdown-item>
+          <el-dropdown-item disabled>當前：v{{ version }}</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
     </div>

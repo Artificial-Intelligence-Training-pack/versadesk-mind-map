@@ -34,7 +34,7 @@ const parseXmindFile = (file, handleMultiCanvas) => {
           if (content) {
             resolve(content)
           } else {
-            reject(new Error('解析失败'))
+            reject(new Error('解析失敗'))
           }
         } catch (error) {
           reject(error)
@@ -205,14 +205,14 @@ const transformOldXmind = content => {
       childrenItem.elements.length > 0
     ) {
       const children = getElementsByType(childrenItem.elements, 'attached')
-      ;(children || []).forEach((item, index) => {
-        const newChild = {}
-        newNode.children.push(newChild)
-        if (childrenSummary[index]) {
-          newChild._summary = childrenSummary[index]
-        }
-        walk(item, newChild)
-      })
+        ; (children || []).forEach((item, index) => {
+          const newChild = {}
+          newNode.children.push(newChild)
+          if (childrenSummary[index]) {
+            newChild._summary = childrenSummary[index]
+          }
+          walk(item, newChild)
+        })
     }
   }
   walk(root, newTree)

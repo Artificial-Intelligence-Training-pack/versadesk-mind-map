@@ -8,7 +8,7 @@
           @dragenter.stop.prevent
           @dragover.stop.prevent
           @drop.stop.prevent="onDrop"
-          >点击此处选择图片、或拖动图片到此</label
+          >點擊此處選擇圖片、或拖動圖片到此</label
         >
         <input
           type="file"

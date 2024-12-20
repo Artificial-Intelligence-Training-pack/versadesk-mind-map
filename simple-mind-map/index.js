@@ -122,7 +122,7 @@ class MindMap {
     this.addCss()
 
     // 初始渲染
-    this.render(this.opt.fit ? () => this.view.fit() : () => {})
+    this.render(this.opt.fit ? () => this.view.fit() : () => { })
 
     // 将初始数据添加到历史记录堆栈中
     if (this.opt.addHistoryOnInit && this.opt.data) {
@@ -259,7 +259,7 @@ class MindMap {
     this.width = this.elRect.width
     this.height = this.elRect.height
     if (this.width <= 0 || this.height <= 0)
-      throw new Error('容器元素el的宽高不能为0')
+      throw new Error('容器元素el的寬高不能為0')
   }
 
   //  容器尺寸变化，调整尺寸
@@ -411,7 +411,7 @@ class MindMap {
     this.command.clearHistory()
     this.command.addHistory()
     this.renderer.setData(data)
-    this.reRender(() => {}, CONSTANTS.SET_DATA)
+    this.reRender(() => { }, CONSTANTS.SET_DATA)
     this.emit('set_data', data)
   }
 
@@ -460,7 +460,7 @@ class MindMap {
   async export(...args) {
     try {
       if (!this.doExport) {
-        throw new Error('请注册Export插件！')
+        throw new Error('請註冊Export插件！')
       }
       let result = await this.doExport.export(...args)
       return result
@@ -670,16 +670,16 @@ class MindMap {
     // 清除节点编辑框
     this.renderer.textEdit.hideEditTextBox()
     this.renderer.textEdit.removeTextEditEl()
-    // 移除插件
-    ;[...MindMap.pluginList].forEach(plugin => {
-      if (
-        this[plugin.instanceName] &&
-        this[plugin.instanceName].beforePluginDestroy
-      ) {
-        this[plugin.instanceName].beforePluginDestroy()
-      }
-      this[plugin.instanceName] = null
-    })
+      // 移除插件
+      ;[...MindMap.pluginList].forEach(plugin => {
+        if (
+          this[plugin.instanceName] &&
+          this[plugin.instanceName].beforePluginDestroy
+        ) {
+          this[plugin.instanceName].beforePluginDestroy()
+        }
+        this[plugin.instanceName] = null
+      })
     // 解绑事件
     this.event.unbind()
     // 移除画布节点
@@ -713,7 +713,7 @@ MindMap.instanceCount = 0
 // 定义新主题
 MindMap.defineTheme = (name, config = {}) => {
   if (theme[name]) {
-    return new Error('该主题名称已存在')
+    return new Error('該主題名稱已存在')
   }
   theme[name] = mergeTheme(defaultTheme, config)
 }

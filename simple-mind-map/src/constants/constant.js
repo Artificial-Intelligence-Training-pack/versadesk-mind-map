@@ -94,39 +94,39 @@ export const initRootNodePositionMap = {
 //  布局结构列表
 export const layoutList = [
   {
-    name: '逻辑结构图',
+    name: '邏輯結構圖',
     value: CONSTANTS.LAYOUT.LOGICAL_STRUCTURE
   },
   {
-    name: '向左逻辑结构图',
+    name: '向左邏輯結構圖',
     value: CONSTANTS.LAYOUT.LOGICAL_STRUCTURE_LEFT
   },
   {
-    name: '思维导图',
+    name: '思維導圖',
     value: CONSTANTS.LAYOUT.MIND_MAP
   },
   {
-    name: '组织结构图',
+    name: '組織結構圖',
     value: CONSTANTS.LAYOUT.ORGANIZATION_STRUCTURE
   },
   {
-    name: '目录组织图',
+    name: '目錄組織圖',
     value: CONSTANTS.LAYOUT.CATALOG_ORGANIZATION
   },
   {
-    name: '时间轴',
+    name: '時間軸',
     value: CONSTANTS.LAYOUT.TIMELINE
   },
   {
-    name: '时间轴2',
+    name: '時間軸2',
     value: CONSTANTS.LAYOUT.TIMELINE2
   },
   {
-    name: '竖向时间轴',
+    name: '豎向時間軸',
     value: CONSTANTS.LAYOUT.VERTICAL_TIMELINE
   },
   {
-    name: '鱼骨图',
+    name: '魚骨圖',
     value: CONSTANTS.LAYOUT.FISHBONE
   }
 ]

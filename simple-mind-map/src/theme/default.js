@@ -56,7 +56,7 @@ export default {
   // 关联线文字行高
   associativeLineTextLineHeight: 1.2,
   // 关联线文字字体
-  associativeLineTextFontFamily: '微软雅黑, Microsoft YaHei',
+  associativeLineTextFontFamily: '微軟雅黑, Microsoft YaHei',
   // 背景颜色
   backgroundColor: '#fafafa',
   // 背景图片
@@ -73,7 +73,7 @@ export default {
   root: {
     shape: 'rectangle',
     fillColor: '#549688',
-    fontFamily: '微软雅黑, Microsoft YaHei',
+    fontFamily: '微軟雅黑, Microsoft YaHei',
     color: '#fff',
     fontSize: 16,
     fontWeight: 'bold',
@@ -111,7 +111,7 @@ export default {
     marginX: 100,
     marginY: 40,
     fillColor: '#fff',
-    fontFamily: '微软雅黑, Microsoft YaHei',
+    fontFamily: '微軟雅黑, Microsoft YaHei',
     color: '#565656',
     fontSize: 16,
     fontWeight: 'normal',
@@ -136,7 +136,7 @@ export default {
     marginX: 50,
     marginY: 0,
     fillColor: 'transparent',
-    fontFamily: '微软雅黑, Microsoft YaHei',
+    fontFamily: '微軟雅黑, Microsoft YaHei',
     color: '#6a6d6c',
     fontSize: 14,
     fontWeight: 'normal',
@@ -161,7 +161,7 @@ export default {
     marginX: 100,
     marginY: 40,
     fillColor: '#fff',
-    fontFamily: '微软雅黑, Microsoft YaHei',
+    fontFamily: '微軟雅黑, Microsoft YaHei',
     color: '#565656',
     fontSize: 16,
     fontWeight: 'normal',

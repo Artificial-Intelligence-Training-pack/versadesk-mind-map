@@ -55,7 +55,7 @@ export default {
     return {
       themeList: [
         {
-          name: '默认主题',
+          name: '默認主題',
           value: 'default',
           dark: false
         },

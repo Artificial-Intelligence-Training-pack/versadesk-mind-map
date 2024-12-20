@@ -1,0 +1,39 @@
+const path = require('path');
+const isDev = process.env.NODE_ENV === 'development';
+
+module.exports = {
+  publicPath: isDev ? '' : './',
+  outputDir: '../dist',
+  lintOnSave: false,
+  productionSourceMap: false,
+  filenameHashing: false,
+  chainWebpack: config => {
+    // 移除默认的 html-webpack-plugin 插件
+    config.plugins.delete('html');
+    config.plugins.delete('preload');
+    config.plugins.delete('prefetch');
+    config.optimization.runtimeChunk(false);
+    // 配置打包為單一文件
+    config.optimization.splitChunks(false);
+    config.output.filename('mind-map-app.js');
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src/'),
+      },
+    },
+    output: {
+      filename: 'mind-map-app.js', // 主文件名
+      library: 'MindMapApp',       // Library 名稱
+      libraryTarget: 'umd',        // 使用 UMD 格式
+    },
+    optimization: {
+      splitChunks: false, // 禁用分割模塊
+      runtimeChunk: false, // 禁用 runtime chunk
+    },
+  },
+  transpileDependencies: [
+    'quill' // 確保對 quill 及其子模塊進行轉譯
+  ],
+};

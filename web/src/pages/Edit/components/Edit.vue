@@ -734,7 +734,7 @@ export default {
         this.mindMap.addPlugin(HandDrawnLikeStyle)
         this.mindMap.reRender()
       } catch (error) {
-        console.log('手绘风格插件不存在')
+        console.log('手繪風格插件不存在')
       }
     },
 
@@ -744,7 +744,7 @@ export default {
         this.mindMap.removePlugin(HandDrawnLikeStyle)
         this.mindMap.reRender()
       } catch (error) {
-        console.log('手绘风格插件不存在')
+        console.log('手繪風格插件不存在')
       }
     },
 
